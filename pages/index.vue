@@ -14,7 +14,7 @@
             <img class="w-full" src="https://yozm.wishket.com/media/news/1587/%EC%9C%84%EC%8B%9C%EC%BC%93_%EC%A0%84%ED%99%98_%EB%B0%B0%EB%84%88.png" alt="">
           </a>
           <div class="my-8 border bg-slate-100 p-4">
-            <strong class="flex w-full text-sm mb-2 font-bold">인기글</strong>
+            <strong class="flex w-full text-sm font-bold mb-4">인기글</strong>
             <ul class="">
               <li class="pb-2" v-for="(item, index) in this.famous" :key="index">
                 <span class="w-full text-sm flex justify-between">
