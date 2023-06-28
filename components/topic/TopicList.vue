@@ -4,7 +4,7 @@
     <ul>
       <li class="pb-3 last:pb-0 flex justify-between" v-for="(item, index) in this.listData" :key="index">
         <span class="flex items-center w-11/12">        
-          <span class="flex items-center border border-slate-300 px-2 text-xs mr-2">{{ item.category }}</span> 
+          <span class="flex items-center border border-slate-300 px-2 text-xs mr-2 text-slate-500">{{ item.category }}</span> 
           <a href="" class="text-sm items-center max-w-[90%] truncate inline-block">
             <img src="https://www.pngkey.com/png/full/291-2912837_album-comments-album-icon-png.png" alt="" class="relative bottom-0.5 inline-block w-4" v-if="item.addedfile === 'Y'">
             {{ item.title }}
