@@ -1,10 +1,10 @@
 <template>
     <div class="border-b border-stone-300">
-        <div v-if="topUrl" class="w-full px-14 py-1 bg-gray-700 flex items-center justify-between">
+        <div v-if="topUrl" class="w-full px-14 py-2 bg-gray-700 flex items-center justify-between">
             <a :href="topUrl" target="_blank" class="text-slate-300 text-sm">MotorH 포트폴리오 바로가기 <span aria-hidden="true">&rarr;</span></a>
             <button class="text-white text-normal hover:font-bold">X</button>
         </div>
-        <nav class="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Global">
             <div class="flex lg:hidden">
             <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Open main menu</span>

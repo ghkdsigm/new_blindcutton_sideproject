@@ -10,8 +10,9 @@
             {{ item.title }}
           </a>
         </span>
-        <span class="w-1/12">
-          {{ item.views }} {{ item.likes }}
+        <span class="w-1/12 flex justify-between text-left">
+          <span class="w-1/2 text-xs"><i class="blind"></i>{{ item.views }}</span>
+          <span class="w-1/2 text-xs"><i class="blind"></i>{{ item.likes }}</span>           
         </span>
       </li>
     </ul>

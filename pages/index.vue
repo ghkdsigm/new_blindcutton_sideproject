@@ -24,6 +24,7 @@
                 </span>
               </li>
             </ul>
+            <p class="text-xs w-full text-center mt-4">※ 블라인드에서 실시간으로 많이 검색된 회사 순위</p>
           </div>
           <a href="">
             <img class="w-full" src="https://openads-real.s3.amazonaws.com/openadsAdmin/smart-editor/images/20220715104826418_725689ae-297f-4fd5-b4a0-290858e0fa10.png" alt="">
