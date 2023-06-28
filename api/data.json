@@ -2,7 +2,8 @@
   "link": {
     "url": "http://motorh.shop"
   },
-  "board": [{
+  "board": [
+    {
       "category": "연예",
       "addedfile": "Y",
       "title": "아이돌 1세대는?",
@@ -103,39 +104,7 @@
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
     }
   ],
-  "famous": [{
-      "category": "연예",
-      "addedfile": "Y",
-      "title": "아이돌 1세대는?",
-      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
-      "views": 55,
-      "likes": 31,
-      "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"],
-      "before": "up"
-    },
-    {
-      "category": "헬스",
-      "addedfile": "N",
-      "title": "운동 오늘도 못했는데",
-      "content": "비도오고 그래서 운동하기 싫으다",
-      "views": 255,
-      "likes": 511,
-      "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
-    },
-    {
-      "category": "헬스",
-      "addedfile": "N",
-      "title": "날씨가 좋다",
-      "content": "비도오고 그래서 운동하기 싫으다",
-      "views": 255,
-      "likes": 511,
-      "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
-    },
+  "famous": [
     {
       "category": "연예",
       "addedfile": "Y",
@@ -170,6 +139,39 @@
       "before": "down"
     },
     {
+      "category": "연예",
+      "addedfile": "Y",
+      "title": "아이돌 1세대는?",
+      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
+      "views": 55,
+      "likes": 31,
+      "dislikes": 144,
+      "hashtag": ["4minute", "idol", "psy"],
+      "before": "up"
+    },
+    {
+      "category": "헬스",
+      "addedfile": "N",
+      "title": "운동 오늘도 못했는데",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 255,
+      "likes": 511,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "before": "down"
+    },
+    {
+      "category": "헬스",
+      "addedfile": "N",
+      "title": "날씨가 좋다",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 255,
+      "likes": 511,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "before": "same"
+    },
+    {
       "category": "헬스",
       "addedfile": "N",
       "title": "날씨가 좋다",
@@ -189,7 +191,7 @@
       "likes": 31,
       "dislikes": 144,
       "hashtag": ["4minute", "idol", "psy"],
-      "before": "up"
+      "before": "same"
     },
     {
       "category": "헬스",
