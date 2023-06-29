@@ -62,18 +62,15 @@
                 :key="index"
               >
                 <span class="w-full text-sm flex justify-between">
-                  <span
-                    ><em
-                      class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center"
+                  <span class="flex w-11/12"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
                       >{{ index + 1 }}</em
                     >
-                    <a href="">{{ item.title }}</a></span
+                    <a href="" class="text-sm truncate tracking-tighter">{{ item.title }}</a></span
                   >
                   <span class="w-3 text-center" v-if="item.before === 'up'"
                     ><em class="w-full not-italic text-red-600">▲</em></span
                   >
-                  <span
-                    class="w-3 text-center"
+                  <span class="w-3 text-center"
                     v-else-if="item.before === 'same'"
                     ><em
                       class="w-full not-italic text-black text-xl leading-superzero"
@@ -86,8 +83,8 @@
                 </span>
               </li>
             </ul>
-            <p class="text-xs w-full text-center mt-4">
-              ※ 실시간으로 많이 검색된 회사 순위
+            <p class="text-xs w-full text-center mt-4 tracking-tighter">
+              ※ 실시간으로 많이 조회된 글 순위
             </p>
           </div>          
           <a href="" class="my-8 block">

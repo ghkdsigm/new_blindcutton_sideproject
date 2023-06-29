@@ -1,8 +1,8 @@
 <template>
-  <div class="border-b border-stone-300">
+  <div class="border-b border-stone-200">
     <div
       v-if="topUrl"
-      class="w-full px-14 py-2 bg-gray-700 flex items-center justify-between"
+      class="w-full px-14 py-2 bg-black flex items-center justify-between"
     >
       <a :href="topUrl" target="_blank" class="text-white text-sm"
         ><em class="font-bold not-italic tracking-tighter">MotorH</em>
