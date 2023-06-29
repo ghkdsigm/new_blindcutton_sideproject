@@ -65,7 +65,7 @@
                   <span class="flex w-11/12"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
                       >{{ index + 1 }}</em
                     >
-                    <a href="" class="text-sm truncate tracking-tighter">{{ item.title }}</a></span
+                    <a href="" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</a></span
                   >
                   <span class="w-3 text-center" v-if="item.before === 'up'"
                     ><em class="w-full not-italic text-red-600">▲</em></span
