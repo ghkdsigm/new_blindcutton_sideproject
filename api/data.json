@@ -215,5 +215,213 @@
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
       "before": "down"
     }
+  ],
+  "sports": [
+    {
+      "category": "농구",
+      "addedfile": "Y",
+      "title": "야오밍짱",
+      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
+      "views": 55,
+      "likes": 31,
+      "dislikes": 144,
+      "hashtag": ["4minute", "idol", "psy"]
+    },
+    {
+      "category": "야구",
+      "addedfile": "N",
+      "title": "박찬호 vs 김병현",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "축구",
+      "addedfile": "N",
+      "title": "흥민이 vs 이강인 vs 김민재 한국 역대급 선수는??",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "야구",
+      "addedfile": "N",
+      "title": "박찬호 vs 김병현",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "축구",
+      "addedfile": "N",
+      "title": "흥민이 vs 이강인 vs 김민재 한국 역대급 선수는??",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    }
+  ],
+  "loves": [
+    {
+      "category": "학교",
+      "addedfile": "Y",
+      "title": "옆반 친구가 좋아요",
+      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
+      "views": 55,
+      "likes": 31,
+      "dislikes": 144,
+      "hashtag": ["4minute", "idol", "psy"]
+    },
+    {
+      "category": "학원",
+      "addedfile": "N",
+      "title": "조교님이랑 연애중입니다",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "동아리",
+      "addedfile": "N",
+      "title": "회비때문에 싸우다가 정들어서 결혼까지",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "학원",
+      "addedfile": "N",
+      "title": "조교님이랑 연애중입니다",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "동아리",
+      "addedfile": "N",
+      "title": "회비때문에 싸우다가 정들어서 결혼까지",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    }
+  ],
+  "games": [
+    {
+      "category": "배그",
+      "addedfile": "Y",
+      "title": "치킨먹었는데 파티원이 자기덕분이라고하네",
+      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
+      "views": 55,
+      "likes": 31,
+      "dislikes": 144,
+      "hashtag": ["4minute", "idol", "psy"]
+    },
+    {
+      "category": "롤",
+      "addedfile": "N",
+      "title": "야스오 벤은 국룰",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "피파4",
+      "addedfile": "N",
+      "title": "구단가치가 안올라 토트넘 구단인데 승질나서 못하겠다",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "배그",
+      "addedfile": "N",
+      "title": "추천할만한 마우스랑 헤드셋 업슴? 구려서 못쓰겠어",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "롤",
+      "addedfile": "N",
+      "title": "제이스 탑 가기 좋음???",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    }
+  ],
+  "cars": [
+    {
+      "category": "국산차",
+      "addedfile": "Y",
+      "title": "제네시스 gv70 vs bmw x40 뭐가 나을까",
+      "content": "우리나라 만만세 가수들 돈 많이 벌어서 해외말고 국내에서 돈 많이 썼으면 좋겠고 영화가 잘되야",
+      "views": 55,
+      "likes": 31,
+      "dislikes": 144,
+      "hashtag": ["4minute", "idol", "psy"]
+    },
+    {
+      "category": "국산차",
+      "addedfile": "N",
+      "title": "k시리즈는 이제 망한건가???",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "외제차",
+      "addedfile": "N",
+      "title": "이제 비엠이나 벤츠도 너무 흔해서 뭘타야 하차감 느끼냐",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "국산차",
+      "addedfile": "N",
+      "title": "아직은 하브가 대세지?? 전기차 무서워서 못타겠다",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 15,
+      "likes": 341,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    },
+    {
+      "category": "외제차",
+      "addedfile": "Y",
+      "title": "랭글러 중고로 샀는데 후하",
+      "content": "비도오고 그래서 운동하기 싫으다",
+      "views": 2,
+      "likes": 44,
+      "dislikes": 1144,
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+    }
   ]
 }

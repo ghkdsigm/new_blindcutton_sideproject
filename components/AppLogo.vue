@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="https://framerusercontent.com/images/4YE8woWOAvHzPL0wqcy1b7dS1i4.png" alt="" class="w-24">
+    <img src="https://i.namu.wiki/i/WBoHRoZXxvUjxQkquy1kdQudWQhmF2q9aZ9bQUVewS8WfFegosxwP8OQhSmVp8LZX5WQ7ETETdtaOKjCy0Xcuw.webp" alt="" class="w-24">
   </div>
 </template>
 
