@@ -1,7 +1,7 @@
 <template>
     <board_list :loves="loves">
         <template v-slot:boardheader>
-            <span>연예</span>
+            <span class="tracking-tighter">연예</span>
         </template>
     </board_list>
   </template>

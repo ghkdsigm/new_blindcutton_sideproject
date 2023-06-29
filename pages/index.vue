@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full pb-8">
+          <div class="w-full">
             <a href="">
               <img
                 class="w-full"
@@ -57,7 +57,7 @@
             <strong class="flex w-full text-sm font-bold mb-4">인기글</strong>
             <ul class="">
               <li
-                class="pb-2"
+                class="pb-2 tracking-tighter"
                 v-for="(item, index) in this.famous"
                 :key="index"
               >

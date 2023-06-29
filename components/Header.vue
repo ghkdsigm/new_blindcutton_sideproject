@@ -47,24 +47,24 @@
         >
         <a
           href="#"
-          class="text-xl font-medium leading-6 text-gray-900 self-center"
+          class="text-xl font-semibold leading-6 text-gray-500 self-center"
           >기업</a
         >
         <a
           href="#"
-          class="text-xl font-medium leading-6 text-gray-900 self-center"
+          class="text-xl font-semibold leading-6 text-gray-500 self-center"
           >리뷰</a
         >
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a
           href="#"
-          class="text-sm font-bold leading-6 text-white border-solid bg-blue-600 px-5 py-2 mr-3"
+          class="text-sm font-extrabold text-white border-solid bg-blue-600 px-5 py-2 mr-3 tracking-tighter"
           >글쓰기</a
         >
         <a
           href="#"
-          class="text-sm font-bold leading-6 text-gray-900 border-solid border border-gray-300 px-5 py-2"
+          class="text-sm font-extrabold text-gray-900 border-solid border border-gray-300 px-5 py-2 tracking-tighter"
           >로그인</a
         >
       </div>
@@ -130,12 +130,12 @@
             <div class="py-6">
               <a
                 href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 bg-black-600"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 bg-black-600 tracking-tighter"
                 >글쓰기</a
               >
               <a
                 href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 tracking-tighter"
                 >로그인</a
               >
             </div>

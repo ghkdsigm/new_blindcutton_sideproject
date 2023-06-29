@@ -1,7 +1,7 @@
 <template>
     <board_list :cars="cars">
         <template v-slot:boardheader>
-            자동차
+            <span class="tracking-tighter">자동차</span>
         </template>
     </board_list>
   </template>

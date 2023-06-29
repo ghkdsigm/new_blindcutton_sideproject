@@ -1,7 +1,7 @@
 <template>
     <board_list :games="games">
         <template v-slot:boardheader>
-            게임
+            <span class="tracking-tighter">게임</span>
         </template>
     </board_list>
   </template>

@@ -1,7 +1,7 @@
 <template>
     <board_list :sports="sports">
         <template v-slot:boardheader>
-            스포츠
+            <span class="tracking-tighter">스포츠</span>
         </template>
     </board_list>
   </template>
