@@ -2,8 +2,7 @@
   "link": {
     "url": "http://motorh.shop"
   },
-  "board": [
-    {
+  "board": [{
       "category": "연예",
       "addedfile": "Y",
       "title": "아이돌 1세대는?",
@@ -11,7 +10,11 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"]
+      "hashtag": ["4minute", "idol", "psy"],
+      "writer": "user",
+      "id": 1,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "부동산",
@@ -21,7 +24,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 2,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "헬스",
@@ -31,7 +38,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 3,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "이별",
@@ -41,7 +52,11 @@
       "views": 51,
       "likes": 2,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 4,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "헬스",
@@ -51,7 +66,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 5,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "시사",
@@ -61,7 +80,11 @@
       "views": 51,
       "likes": 2,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 6,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "주식",
@@ -71,7 +94,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 7,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "코인",
@@ -81,7 +108,11 @@
       "views": 51,
       "likes": 2,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 8,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "시사",
@@ -91,7 +122,11 @@
       "views": 51,
       "likes": 2,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 9,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "주식",
@@ -101,11 +136,14 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 10,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ],
-  "famous": [
-    {
+  "famous": [{
       "category": "연예",
       "addedfile": "Y",
       "title": "아이돌 1세대는?",
@@ -113,8 +151,12 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"],
-      "before": "up"
+      "hashtag": ["4minute", "idol", "psy"],      
+      "writer": "user",
+      "before": "up",
+      "id": 11,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "헬스",
@@ -125,7 +167,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 12,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "헬스",
@@ -136,7 +182,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 13,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "연예",
@@ -147,7 +197,11 @@
       "likes": 31,
       "dislikes": 144,
       "hashtag": ["4minute", "idol", "psy"],
-      "before": "up"
+      "writer": "user",
+      "before": "up",
+      "id": 14,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "스포츠",
@@ -158,7 +212,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 15,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "시사",
@@ -169,7 +227,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "same"
+      "writer": "user",
+      "before": "same",
+      "id": 16,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "반려동물",
@@ -180,7 +242,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 17,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "연예",
@@ -191,7 +257,11 @@
       "likes": 31,
       "dislikes": 144,
       "hashtag": ["4minute", "idol", "psy"],
-      "before": "same"
+      "writer": "user",
+      "before": "same",
+      "id": 18,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "헬스",
@@ -202,7 +272,11 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 19,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "자동차",
@@ -213,11 +287,14 @@
       "likes": 511,
       "dislikes": 1144,
       "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
-      "before": "down"
+      "writer": "user",
+      "before": "down",
+      "id": 20,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ],
-  "sports": [
-    {
+  "sports": [{
       "category": "농구",
       "addedfile": "Y",
       "title": "야오밍짱",
@@ -225,7 +302,11 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"]
+      "hashtag": ["4minute", "idol", "psy"],
+      "writer": "user",
+      "id": 21,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "야구",
@@ -235,7 +316,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 22,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "축구",
@@ -245,7 +330,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 23,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "야구",
@@ -255,7 +344,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 24,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "축구",
@@ -265,11 +358,14 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 25,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ],
-  "loves": [
-    {
+  "loves": [{
       "category": "학교",
       "addedfile": "Y",
       "title": "옆반 친구가 좋아요",
@@ -277,7 +373,11 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"]
+      "hashtag": ["4minute", "idol", "psy"],
+      "writer": "user",
+      "id": 26,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "학원",
@@ -287,7 +387,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 27,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "동아리",
@@ -297,7 +401,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 28,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "학원",
@@ -307,7 +415,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 29,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "동아리",
@@ -317,11 +429,14 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 30,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ],
-  "games": [
-    {
+  "games": [{
       "category": "배그",
       "addedfile": "Y",
       "title": "치킨먹었는데 파티원이 자기덕분이라고하네",
@@ -329,7 +444,11 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"]
+      "hashtag": ["4minute", "idol", "psy"],
+      "writer": "user",
+      "id": 31,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "롤",
@@ -339,7 +458,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 32,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "피파4",
@@ -349,7 +472,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 33,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "배그",
@@ -359,7 +486,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 34,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "롤",
@@ -369,11 +500,14 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 35,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ],
-  "cars": [
-    {
+  "cars": [{
       "category": "국산차",
       "addedfile": "Y",
       "title": "제네시스 gv70 vs bmw x40 뭐가 나을까",
@@ -381,7 +515,11 @@
       "views": 55,
       "likes": 31,
       "dislikes": 144,
-      "hashtag": ["4minute", "idol", "psy"]
+      "hashtag": ["4minute", "idol", "psy"],
+      "writer": "user",
+      "id": 36,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "국산차",
@@ -391,7 +529,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 37,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "외제차",
@@ -401,7 +543,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 38,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "국산차",
@@ -411,7 +557,11 @@
       "views": 15,
       "likes": 341,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 39,
+      "date": "2023.01.12",
+      "recommentcount": 12
     },
     {
       "category": "외제차",
@@ -421,7 +571,11 @@
       "views": 2,
       "likes": 44,
       "dislikes": 1144,
-      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"]
+      "hashtag": ["헬스보이", "풀업", "푸쉬업", "윗통", "하체"],
+      "writer": "user",
+      "id": 40,
+      "date": "2023.01.12",
+      "recommentcount": 12
     }
   ]
 }

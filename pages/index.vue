@@ -1,13 +1,6 @@
 <template>
   <section id="wrap" class="home">
-    <div>
-      <Header :top-url="topUrl" />
-      <a class="download-blind" style="display: none"
-        ><img
-          src="https://images.squarespace-cdn.com/content/v1/55a8d6f7e4b054bcba8dfc63/1553722639427-F85K3SJ5IPAWILG60L7D/test.png?format=750w"
-        />
-        <i class="blind">대한민국 직장인 생활백서 블라인드 다운로드</i></a
-      >
+    <div>     
       <div class="flex mx-auto max-w-6xl justify-between px-6 my-8">
         <div class="w-5/7 mr-16 py-4 flex flex-wrap">
           <Search class="w-full pb-8" />
@@ -53,7 +46,7 @@
               alt=""
             />
           </a>
-          <div class="my-8 border bg-slate-100 p-6">
+          <div class="my-8 bg-slate-100 p-6">
             <strong class="flex w-full text-sm font-bold mb-4">인기글</strong>
             <ul class="">
               <li
@@ -83,7 +76,7 @@
                 </span>
               </li>
             </ul>
-            <p class="text-xs w-full text-center mt-4 tracking-tighter">
+            <p class="text-xs w-full text-center mt-4 tracking-tighter text-gray-400">
               ※ 실시간으로 많이 조회된 글 순위
             </p>
           </div>          
@@ -103,14 +96,11 @@
           </a>
         </div>
       </div>
-      <Footer />
     </div>
   </section>
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
-import Footer from "~/pages/footer.vue";
 import Search from "~/components/search/Search.vue";
 import Topic from "~/pages/topic.vue";
 import Recuite from "~/pages/recruite.vue";
@@ -122,8 +112,6 @@ import data from "~/api/data.json";
 
 export default {
   components: {
-    Header,
-    Footer,
     Topic,
     Search,
     Recuite,
@@ -132,18 +120,14 @@ export default {
     Games,
     Cars
   },
-  data() {
+  data(){
     return {
-      famous: "",
-      topUrl: ""
-    };
+      famous: ""
+    }
   },
   created() {
     this.famous = data.famous;
-  },
-  mounted() {
-    this.topUrl = data.link.url;
-  },
+  }
 };
 </script>
 

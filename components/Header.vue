@@ -40,10 +40,10 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="#"><AppLogo /></a>
-        <a
-          href="#"
+        <nuxt-link
+          to="/"
           class="text-xl font-semibold leading-6 text-gray-900 self-center"
-          >홈</a
+          >홈</nuxt-link
         >
         <a
           href="#"

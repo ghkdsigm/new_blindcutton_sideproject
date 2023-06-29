@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3 class="w-full border-b border-slate-300 flex justify-between text-xl font-bold mb-4 items-center py-2 tracking-tighter">인기 뽑기 <a href="" class="text-xs font-normal">자세히보기</a></h3>
+        <h3 class="w-full border-b border-slate-300 flex justify-between text-xl font-bold mb-4 items-center py-2 tracking-tighter">인기 뽑기 <a href="" class="text-xs font-normal">더보기</a></h3>
         <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             <div class="group relative">
                 <div
