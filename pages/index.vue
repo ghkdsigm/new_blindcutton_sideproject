@@ -67,17 +67,17 @@
                     >
                     <a href="" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</a></span
                   >
-                  <span class="w-3 text-center" v-if="item.before === 'up'"
+                  <span class="w-3 text-center text-xs" v-if="item.before === 'up'"
                     ><em class="w-full not-italic text-red-600">▲</em></span
                   >
-                  <span class="w-3 text-center"
+                  <span class="w-3 text-center text-xs"
                     v-else-if="item.before === 'same'"
                     ><em
                       class="w-full not-italic text-black text-xl leading-superzero"
                       >-</em
                     ></span
                   >
-                  <span class="w-3 text-center" v-else
+                  <span class="w-3 text-center text-xs" v-else
                     ><em class="w-full not-italic text-blue-600">▼</em></span
                   >
                 </span>
