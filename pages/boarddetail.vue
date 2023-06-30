@@ -3,15 +3,15 @@
     <div class="w-5/7 mr-16 flex flex-wrap">
         <div class="w-full border-b border-gray-200 pb-8">
             <h1>
-              <a href="" class="font-bold">
+              <a href="" class="font-bold tracking-tighter">
                 {{ cont.category }}
               </a>
             </h1>
-            <h2 class="text-2xl my-3 font-bold">              
+            <h2 class="text-2xl my-3 font-bold tracking-tighter">              
               {{ cont.title }}
             </h2>
             <div>
-              <a href="" class="text-sm font-medium">{{ cont.writer }}</a>
+              <a href="" class="text-sm font-medium text-sky-500">{{ cont.writer }}</a>
               <span></span>
             </div>
             <div>
@@ -27,11 +27,11 @@
             </div>
         </div>
         <div class="w-full py-8">
-          <p class="text-sm">
+          <p class="text-sm tracking-tighter">
             {{ cont.content }}
           </p>
-          <div class="flex py-3">
-            <span class="">{{ cont.recommentcount }}</span>
+          <div class="flex py-3 ">
+            <span class="tracking-tighter">{{ cont.recommentcount }}</span>
           </div>
         </div>
         <div class="w-full border-t border-gray-200 pb-8">
@@ -40,7 +40,7 @@
     </div>
     <div class="w-2/7 py-4">
         <div class="mb-8 border border-slate-200 p-6">
-            <strong class="flex w-full text-sm font-bold mb-4">인기글</strong>
+            <strong class="flex w-full text-sm font-bold mb-4">'{{cont.category}}'관련 추천글</strong>
             <!-- <ul class="">
               <li
                 class="pb-2 tracking-tighter"

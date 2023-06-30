@@ -20,6 +20,9 @@ module.exports = {
       lineHeight: {
         superzero: "0",
       },
+      fontFamily: {
+        'notosans': ['Noto Sans KR', 'sans-serif']
+      },
       fontSize: {
         "4xs": ".25rem",
         "2xs": ".5rem",

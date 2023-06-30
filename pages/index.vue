@@ -1,5 +1,5 @@
 <template>
-  <section id="wrap" class="home">
+  <section id="wrap" class="home font-notosans">
     <div>     
       <div class="flex mx-auto max-w-6xl justify-between px-6 my-8">
         <div class="w-5/7 mr-16 py-4 flex flex-wrap">
