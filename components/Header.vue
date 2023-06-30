@@ -13,7 +13,7 @@
       </button>
     </div>
     <nav
-      class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8"
+      class="mx-auto flex max-w-6xl justify-between py-4"
       aria-label="Global"
     >
       <div class="flex lg:hidden">
@@ -38,7 +38,7 @@
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
+      <div class="hidden lg:flex lg:gap-x-12 items-center">
         <a href="#"><AppLogo /></a>
         <nuxt-link
           to="/"

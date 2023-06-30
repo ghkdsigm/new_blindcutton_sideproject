@@ -3,7 +3,7 @@
         <div class="footer">
             <div class="border-t border-stone-200 pb-5 pt-5">
                 <div class="relative px-4 sm:px-8 lg:px-12">
-                    <div class="flex mx-auto max-w-6xl justify-between px-6 my-4">
+                    <div class="flex mx-auto max-w-6xl justify-between my-4">
                         <div class="flex items-center justify-between w-full">
                             <div class="flex flex-col">
                                 <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm font-medium">

@@ -1,8 +1,8 @@
 <template>
   <section id="wrap" class="home font-notosans">
     <div>     
-      <div class="flex mx-auto max-w-6xl justify-between px-6 my-8">
-        <div class="w-5/7 mr-16 py-4 flex flex-wrap">
+      <div class="flex mx-auto max-w-6xl justify-between my-8">
+        <div class="w-4/7 flex-1 mr-16  py-4 flex flex-wrap">
           <Search class="w-full pb-8" />
           <Topic class="w-full pb-8" />
           <Recuite class="w-full pb-8" />
@@ -47,7 +47,7 @@
             />
           </a>
           <div class="my-8 bg-slate-100 p-6">
-            <strong class="flex w-full text-sm font-bold mb-4">인기글</strong>
+            <strong class="flex w-full text-sm font-bold mb-4">실시간 인기글</strong>
             <ul class="">
               <li
                 class="pb-2 tracking-tighter"
