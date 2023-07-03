@@ -59,6 +59,7 @@
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a
           href="#"
+          @click="showCommentModal = true"
           class="text-sm font-extrabold text-white border-solid bg-blue-600 px-5 py-2 mr-3 tracking-tighter"
           >글쓰기</a
         >
@@ -143,20 +144,28 @@
         </div>
       </div>
     </div>
+    <Register v-if="showCommentModal" @close-modal="showCommentModal = false"/>
   </div>
 </template>
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
+import Register from "~/components/write/BoardWrite.vue";
 
 export default {
   components: {
     AppLogo,
+    Register
   },
   props: {
     topUrl: {
       type: String,
     },
+  },
+  data(){
+    return {
+      showCommentModal : false
+    }
   },
   methods: {
     closeTop() {
