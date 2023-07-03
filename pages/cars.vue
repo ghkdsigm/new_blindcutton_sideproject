@@ -1,5 +1,5 @@
 <template>
-    <board_list :cars="cars">
+    <board_list :cars="cars" :link="link">
         <template v-slot:boardheader>
             <span class="tracking-tighter">자동차</span>
         </template>
@@ -17,7 +17,8 @@
     },
     data(){
         return {
-            cars : ""
+            cars : "",
+            link : "/cars"
         }
     },
     created(){

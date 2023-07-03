@@ -1,5 +1,5 @@
 <template>
-    <board_list :loves="loves">
+    <board_list :loves="loves" :link="link">
         <template v-slot:boardheader>
             <span class="tracking-tighter">연예</span>
         </template>
@@ -17,7 +17,8 @@
     },
     data(){
         return {
-            loves : ""
+            loves : "",
+            link : "/love"
         }
     },
     created(){

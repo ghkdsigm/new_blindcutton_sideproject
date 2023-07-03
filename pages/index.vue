@@ -1,5 +1,5 @@
 <template>
-  <section id="wrap" class="home font-notosans">
+  <div id="wrap" class="home font-notosans">
     <div>     
       <div class="flex mx-auto max-w-6xl justify-between my-8">
         <div class="w-4/7 flex-1 mr-16  py-4 flex flex-wrap">
@@ -97,7 +97,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

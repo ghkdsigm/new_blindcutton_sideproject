@@ -1,5 +1,5 @@
 <template>
-    <board_list :games="games">
+    <board_list :games="games" :link="link">
         <template v-slot:boardheader>
             <span class="tracking-tighter">게임</span>
         </template>
@@ -17,7 +17,8 @@
     },
     data(){
         return {
-            games : ""
+            games : "",
+            link : "/sports"
         }
     },
     created(){
