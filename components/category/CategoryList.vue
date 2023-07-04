@@ -8,11 +8,11 @@
                     </div>
                     <div class="pb-2">
                         <div class="flex">
-                            <span :class="{ 'w-9/12' : item.imgurl !== '' }">
+                            <span :class="{ 'w-5/6' : item.imgurl !== '' }">
                                 <h3 class="text-lg font-bold pb-2">{{ item.title }}</h3>
                                 <p class="pb-2 text-sm">{{ item.content }}</p>
                             </span>
-                            <span :class="{ 'w-3/12' : item.imgurl !== '' }" v-if="item.imgurl !== ''">
+                            <span :class="{ 'w-1/6' : item.imgurl !== '' }" v-if="item.imgurl !== ''">
                                 <img :src="item.imgurl" alt="" />
                             </span>
                         </div>
