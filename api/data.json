@@ -3,6 +3,7 @@
     "url": "http://motorh.shop"
   },
   "board": [{
+      "type" : "오늘의 이야기",
       "category": "연예",
       "addedfile": "Y",
       "title": "아이돌 1세대는?",
@@ -18,6 +19,7 @@
       "imgurl" : "https://img.sbs.co.kr/newimg/news/20230403/201768737_500.jpg"
     },
     {
+      "type" : "오늘의 이야기",
       "category": "부동산",
       "addedfile": "N",
       "title": "서울 집값 vs 홍콩 집값 vs 싱가폴 집값 결과는??",
@@ -33,6 +35,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "헬스",
       "addedfile": "N",
       "title": "운동 오늘도 못했는데",
@@ -48,6 +51,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "이별",
       "addedfile": "N",
       "title": "비도오고 그래서 네 생각이나서 생각이나서 그래서",
@@ -63,6 +67,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "헬스",
       "addedfile": "Y",
       "title": "운동 오늘도 못했는데",
@@ -78,6 +83,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "시사",
       "addedfile": "Y",
       "title": "러우 전쟁 끝나면 양상 어찌될까? 미국vs중국 패권 경쟁 더 오지려나 아니면 와해되고 화해 분위기 오를려나",
@@ -93,6 +99,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "주식",
       "addedfile": "N",
       "title": "오늘 두배먹음 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -108,6 +115,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "코인",
       "addedfile": "Y",
       "title": "SEC gg쳤다 리플 떡상 가즈아~!",
@@ -123,6 +131,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "시사",
       "addedfile": "Y",
       "title": "러우 전쟁 끝나면 양상 어찌될까? 미국vs중국 패권 경쟁 더 오지려나 아니면 와해되고 화해 분위기 오를려나",
@@ -138,6 +147,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "오늘의 이야기",
       "category": "주식",
       "addedfile": "N",
       "title": "오늘 두배먹음 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -154,6 +164,7 @@
     }
   ],
   "famous": [{
+      "type" : "인기",
       "category": "연예",
       "addedfile": "Y",
       "title": "아이돌 1세대는?",
@@ -170,6 +181,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "헬스",
       "addedfile": "N",
       "title": "운동 오늘도 못했는데",
@@ -186,6 +198,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "헬스",
       "addedfile": "N",
       "title": "날씨가 좋다",
@@ -202,6 +215,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "연예",
       "addedfile": "Y",
       "title": "bts가 중국 가수였을때 jpg",
@@ -218,6 +232,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "스포츠",
       "addedfile": "N",
       "title": "손흥민 다리 부상 사고 발생!!",
@@ -234,6 +249,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "시사",
       "addedfile": "N",
       "title": "북한의 정세 변화! 그 가운데 유승준이?",
@@ -250,6 +266,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "반려동물",
       "addedfile": "N",
       "title": "길거리에서 간택당한 집사의 이야기",
@@ -266,6 +283,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "연예",
       "addedfile": "Y",
       "title": "일본가수와 우리나라 가수의 가창력 차이",
@@ -282,6 +300,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "헬스",
       "addedfile": "N",
       "title": "풀업만 100일! 그 변화는?",
@@ -298,6 +317,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "인기",
       "category": "자동차",
       "addedfile": "N",
       "title": "외제차의 반격",
@@ -315,6 +335,7 @@
     }
   ],
   "sports": [{
+      "type" : "스포츠",
       "category": "농구",
       "addedfile": "Y",
       "title": "야오밍짱",
@@ -330,6 +351,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "스포츠",
       "category": "야구",
       "addedfile": "N",
       "title": "박찬호 vs 김병현",
@@ -345,6 +367,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "스포츠",
       "category": "축구",
       "addedfile": "N",
       "title": "흥민이 vs 이강인 vs 김민재 한국 역대급 선수는??",
@@ -360,6 +383,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "스포츠",
       "category": "야구",
       "addedfile": "N",
       "title": "박찬호 vs 김병현",
@@ -375,6 +399,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "스포츠",
       "category": "축구",
       "addedfile": "N",
       "title": "흥민이 vs 이강인 vs 김민재 한국 역대급 선수는??",
@@ -391,6 +416,7 @@
     }
   ],
   "loves": [{
+      "type" : "연예",
       "category": "학교",
       "addedfile": "Y",
       "title": "옆반 친구가 좋아요",
@@ -406,6 +432,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "연예",
       "category": "학원",
       "addedfile": "N",
       "title": "조교님이랑 연애중입니다",
@@ -421,6 +448,7 @@
       "imgurl" : "https://img.sbs.co.kr/newimg/news/20230403/201768737_500.jpg"
     },
     {
+      "type" : "연예",
       "category": "동아리",
       "addedfile": "N",
       "title": "회비때문에 싸우다가 정들어서 결혼까지",
@@ -436,6 +464,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "연예",
       "category": "학원",
       "addedfile": "N",
       "title": "조교님이랑 연애중입니다",
@@ -451,6 +480,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "연예",
       "category": "동아리",
       "addedfile": "N",
       "title": "회비때문에 싸우다가 정들어서 결혼까지",
@@ -467,6 +497,7 @@
     }
   ],
   "games": [{
+      "type" : "게임",
       "category": "배그",
       "addedfile": "Y",
       "title": "치킨먹었는데 파티원이 자기덕분이라고하네",
@@ -482,6 +513,7 @@
       "imgurl" : "https://image.ajunews.com//content/image/2020/12/14/20201214162118449628.jpg"
     },
     {
+      "type" : "게임",
       "category": "롤",
       "addedfile": "N",
       "title": "야스오 벤은 국룰",
@@ -497,6 +529,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "게임",
       "category": "피파4",
       "addedfile": "N",
       "title": "구단가치가 안올라 토트넘 구단인데 승질나서 못하겠다",
@@ -512,6 +545,7 @@
       "imgurl" : "https://image.zdnet.co.kr/2018/05/17/leespot_jHgiP2ikTkoR.jpg"
     },
     {
+      "type" : "게임",
       "category": "배그",
       "addedfile": "N",
       "title": "추천할만한 마우스랑 헤드셋 업슴? 구려서 못쓰겠어",
@@ -527,6 +561,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "게임",
       "category": "롤",
       "addedfile": "N",
       "title": "제이스 탑 가기 좋음???",
@@ -543,6 +578,7 @@
     }
   ],
   "cars": [{
+      "type" : "자동차",
       "category": "국산차",
       "addedfile": "Y",
       "title": "제네시스 gv70 vs bmw x40 뭐가 나을까",
@@ -558,6 +594,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "자동차",
       "category": "국산차",
       "addedfile": "N",
       "title": "k시리즈는 이제 망한건가???",
@@ -573,6 +610,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "자동차",
       "category": "외제차",
       "addedfile": "N",
       "title": "이제 비엠이나 벤츠도 너무 흔해서 뭘타야 하차감 느끼냐",
@@ -588,6 +626,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "자동차",
       "category": "국산차",
       "addedfile": "N",
       "title": "아직은 하브가 대세지?? 전기차 무서워서 못타겠다",
@@ -603,6 +642,7 @@
       "imgurl" : ""
     },
     {
+      "type" : "자동차",
       "category": "외제차",
       "addedfile": "Y",
       "title": "랭글러 중고로 샀는데 후하",

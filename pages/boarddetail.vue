@@ -64,6 +64,7 @@
           </form>          
         </div>
       </div>
+      <!-- //댓글존 -->
       <!-- 대댓글존 -->
       <div class="w-full p-4 border-b border-gray-200">
         <p class="flex">
@@ -101,6 +102,14 @@
           </span>
         </div>
       </div>
+      <!-- //대댓글존 -->
+      <!-- View 광고존 -->
+      <div class="w-full mt-10 mb-6">
+        <a href="">
+          <img src="http://d2u3dcdbebyaiu.cloudfront.net/img/web_banner/web_banner_kr_1683619733.jpg" alt="">
+        </a>
+      </div>
+      <!-- //View 광고존 -->
     </div>
     <div class="w-2/7">
       <div class="mb-8 border border-slate-200 p-6">
@@ -155,19 +164,21 @@
 </template>
 
 <script>
+import data from "~/api/data.json";
 
 export default {
   data() {
     return {
       cont: "",
       cbt: "",
-      emptyValue : true
+      emptyValue : true,
+      recommend: ''
     }
   },
   mounted() {
     if (this.$route.params.id) {
       this.cont = this.$route.params.id
-    }
+    }  
   },
   methods:{
     focusText(newValue, oldValue){

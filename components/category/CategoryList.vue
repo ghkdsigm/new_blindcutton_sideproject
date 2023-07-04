@@ -2,8 +2,8 @@
     <div>     
         <ul class="border-b border-gray-200 flex px-2">
             <li ref="categorylisttop" v-for="(item, index) in array" :key="index" class="px-4 py-2">
-                <span @click="changeSet(item, index)">
-                    {{ item }}
+                <span @click="changeSet(item, index)" class="hover:cursor-pointer">
+                    {{ item === 'board' ? '오늘의 이야기' :  item === 'famous' ? '인기' : item === 'sports' ? '스포츠' : item === 'loves' ? '연예' : item === 'games' ? '게임' : item === 'cars' ? '자동차' : null}}
                 </span>                    
             </li>
         </ul>
@@ -53,27 +53,28 @@
             checkClick: false
         }
     },
-    created(){    
+    created(){
+        
+    },
+    mounted(){    
         for(var key in data) {         
             if(key !== 'link'){
-                this.array.push(key)
+                this.array.push(key)               
             }            
         }    
         this.$nextTick(function() { 
             this.detailSet = data[this.paramData]
             
-            for(let i = 0; i < this.$refs.categorylisttop.length; i++){
-                this.$refs.categorylisttop[i].innerText === this.$route.params.id ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
-                
+            for(let i = 0; i < this.array.length; i++){
+                this.array[i] === this.$route.params.id ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
             }
-        })        
+        }) 
     },
     methods:{
         changeSet(e, index){               
-            console.log(e)
-            for(let i = 0; i < this.$refs.categorylisttop.length; i++){
-                this.$refs.categorylisttop[i].innerText === e ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
-                
+            for(let i = 0; i < this.array.length; i++){
+                console.log(this.array) 
+                this.array[i] === e ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
             }
             this.paramData = e
             this.detailSet = data[this.paramData]
