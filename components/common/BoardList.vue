@@ -7,7 +7,7 @@
         <li class="pb-3 last:pb-0 flex justify-between tracking-tighter" v-for="(item, index) in listData.slice(0,5)" :key="index">
           <span class="flex items-center w-11/12">        
             <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="text-sm items-center max-w-[90%] truncate inline-block" :title="item.title">
-              <img src="https://www.pngkey.com/png/full/291-2912837_album-comments-album-icon-png.png" alt="" class="relative bottom-0.5 inline-block w-4" v-if="item.addedfile === 'Y'">
+              <img src="https://www.pngkey.com/png/full/291-2912837_album-comments-album-icon-png.png" alt="" class="relative bottom-0.5 inline-block w-4" v-if="item.imgurl !== ''">
               {{ item.title }}
             </nuxt-link>
           </span>

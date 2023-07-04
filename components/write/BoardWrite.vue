@@ -8,7 +8,7 @@
             <!-- 상단 -->
             <div @click.stop class="flex flex-col max-w-3xl h-[60vh] bg-white dark:bg-black text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-full justify-center" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div class="border-b border-gray-200 dark:border-gray-700 p-2 text-right flex items-center justify-between px-7 py-2">
-                    <button @click="sendClose()" class="fas fa-times text-primary dark:text-white text-base">Close</button>
+                    <button @click="sendClose()" class="fas fa-times text-primary dark:text-white text-base">닫기</button>
                     <span class="text-lg font-bold">글쓰기</span>
                     <!-- 글쓰기버튼 -->
                     <div class="lg:text-right mr-2">

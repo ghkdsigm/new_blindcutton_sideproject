@@ -6,13 +6,25 @@
                     <div class="pb-2 text-sm">
                         {{ item.category }} 
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold pb-2">{{ item.title }}</h3>
-                        <p class="pb-3 text-sm">{{ item.content }}</p>
-                        <a href="" class="text-xs">{{ item.writer }}</a>
+                    <div class="pb-2">
+                        <div class="flex">
+                            <span :class="{ 'w-9/12' : item.imgurl !== '' }">
+                                <h3 class="text-lg font-bold pb-2">{{ item.title }}</h3>
+                                <p class="pb-2 text-sm">{{ item.content }}</p>
+                            </span>
+                            <span :class="{ 'w-3/12' : item.imgurl !== '' }" v-if="item.imgurl !== ''">
+                                <img :src="item.imgurl" alt="" />
+                            </span>
+                        </div>
+                        <a href="" class="pb-3 text-xs">{{ item.writer }}</a>
                     </div>
-                    <div>
-                        <p></p>
+                    <div class="flex justify-between">
+                        <span class="text-xs">
+                            <span>{{ item.views }}</span>
+                            <span>{{ item.likes }}</span>
+                            <span>{{ item.dislikes }}</span>
+                        </span>
+                        <span class="text-xs"> {{ item.date }} </span>
                     </div>
                 </nuxt-link>                
             </div>        

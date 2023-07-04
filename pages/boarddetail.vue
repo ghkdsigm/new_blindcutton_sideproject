@@ -30,6 +30,9 @@
         <p class="text-base tracking-tighter">
           {{ cont.content }}
         </p>
+        <div v-if="cont.imgurl" class="pt-3">
+          <img :src="cont.imgurl" alt="">
+        </div>
         <div class="flex py-3 ">
           <span class="tracking-tighter">{{ cont.recommentcount }}</span>
         </div>
@@ -61,7 +64,7 @@
         </p>
         <p class=" text-base tracking-tighter pt-2 pb-4">
           {{ cont.content }}
-        </p>
+        </p>        
         <div class="flex justify-between">
           <span class="text-xs">
             <span></span>
