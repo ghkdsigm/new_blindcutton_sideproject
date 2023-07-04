@@ -3,9 +3,9 @@
     <div class="w-5/7 mr-16 flex flex-wrap content-start">
       <div class="w-full border-b border-gray-200 pb-8">
         <h1>
-          <a href="" class="font-bold tracking-tighter">
-            {{ cont.category }}
-          </a>
+          <span href="" class="font-bold tracking-tighter flex items-center">
+            <nuxt-link :to="{name:'category', params:{id: 'board'}}" class="h-full text-sm font-semibold">토픽</nuxt-link> <span class="text-xs px-3 font-mono h-full">></span> <span class="h-full text-sm font-semibold">{{ cont.category }}</span>
+          </span>
         </h1>
         <h2 class="text-2xl my-3 font-bold tracking-tighter">
           {{ cont.title }}
@@ -30,13 +30,13 @@
         <p class="text-base tracking-tighter">
           {{ cont.content }}
         </p>
-        <div v-if="cont.imgurl" class="pt-3">
+        <div v-if="cont.imgurl" class="pt-8">
           <img :src="cont.imgurl" alt="">
         </div>
-        <div class="flex py-3 ">
+        <div class="flex pt-8 ">
           <span class="tracking-tighter">{{ cont.recommentcount }}</span>
         </div>
-        <ul class="flex">
+        <ul class="flex pt-8">
           <li v-for="(item, index) in cont.hashtag" :key="index">
             <span class="pr-2 font-mono text-xs text-gray-600 tracking-tight">
               {{ '#' + item }}
@@ -172,7 +172,7 @@ export default {
       cont: "",
       cbt: "",
       emptyValue : true,
-      recommend: ''
+      recommend: '',
     }
   },
   mounted() {
