@@ -1,7 +1,14 @@
 <template>    
     <div>     
-        <div class="flex mx-auto max-w-6xl justify-between my-8">
-            <div class="w-full py-4 flex flex-wrap overflow-hidden">          
+        <ul class="border-b border-gray-200 flex px-2">
+            <li ref="categorylisttop" v-for="(item, index) in array" :key="index" class="px-4 py-2">
+                <span @click="changeSet(item, index)">
+                    {{ item }}
+                </span>                    
+            </li>
+        </ul>
+        <div>
+            <div class="w-full flex flex-wrap overflow-hidden">          
                 <nuxt-link :to="{name:'boarddetail', params:{id: detailSet[index]}}" class="w-1/2 py-8 pl-4 odd:pr-4 odd:pl-0 border-b border-gray-200 odd:border-r" v-for="(item, index) in detailSet" :key="index">
                     <div class="pb-2 text-sm">
                         {{ item.category }} 
@@ -33,20 +40,39 @@
   </template>
   
   <script>
-  import board_list from '~/components/common/BoardList.vue'
   import data from "~/api/data.json";
 
   export default {
     data(){
         return {
             paramData: this.$route.params.id,
-            detailSet: ''
+            detailSet: '',
+            detailList: '',
+            array: [],
+            selLi: this.$refs.categorylisttop,
+            checkClick: false
         }
     },
-    created(){        
+    created(){    
+        for(var key in data) {         
+            if(key !== 'link'){
+                this.array.push(key)
+            }            
+        }    
         this.$nextTick(function() { 
             this.detailSet = data[this.paramData]
         })        
+    },
+    methods:{
+        changeSet(e, index){               
+            console.log(e)
+            for(let i = 0; i < this.$refs.categorylisttop.length; i++){
+                this.$refs.categorylisttop[i].innerText === e ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
+                
+            }
+            this.paramData = e
+            this.detailSet = data[this.paramData]
+        }    
     }
   }
   </script>

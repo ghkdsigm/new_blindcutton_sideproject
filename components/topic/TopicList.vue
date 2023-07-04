@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h3 class="w-full border-b border-slate-300 flex justify-between text-xl font-bold mb-4 items-center py-2 tracking-tighter">오늘의 이야기 <a href="" class="text-xs font-normal">더보기</a></h3>
+    <h3 class="w-full border-b border-slate-300 flex justify-between text-xl font-bold mb-4 items-center py-2 tracking-tighter">
+      오늘의 이야기 
+      <nuxt-link :to="{name:'category', params:{id: linkName}}" class="text-xs font-normal">더보기</nuxt-link>
+    </h3>
     <ul>
       <li class="pb-3 last:pb-0 flex justify-between tracking-tighter" v-for="(item, index) in this.listData" :key="index">
         <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="flex items-center w-11/12">        
@@ -25,12 +28,13 @@ import data from '~/api/data.json'
 export default {  
   data(){
     return {
-      listData: ''
+      listData: '',
+      linkName: '',
     }
   },
   created(){
     this.listData = data.board
-    console.log(this.listData)
+    this.linkName = 'board'
   }
 }
 </script>

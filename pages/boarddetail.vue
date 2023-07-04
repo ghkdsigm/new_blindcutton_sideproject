@@ -36,6 +36,13 @@
         <div class="flex py-3 ">
           <span class="tracking-tighter">{{ cont.recommentcount }}</span>
         </div>
+        <ul class="flex">
+          <li v-for="(item, index) in cont.hashtag" :key="index">
+            <span class="pr-2 font-mono text-xs text-gray-600 tracking-tight">
+              {{ '#' + item }}
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- 댓글존 -->
       <div class="w-full border-t border-b border-gray-200">
