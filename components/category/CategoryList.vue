@@ -2,7 +2,7 @@
     <div>     
         <div class="flex mx-auto max-w-6xl justify-between my-8">
             <div class="w-full py-4 flex flex-wrap overflow-hidden">          
-                <nuxt-link :to="{name:'boarddetail', params:{id: detailSet[index]}}" class="w-1/2 py-8 pl-4 odd:pr-4 odd:pl-0" v-for="(item, index) in detailSet" :key="index">
+                <nuxt-link :to="{name:'boarddetail', params:{id: detailSet[index]}}" class="w-1/2 py-8 pl-4 odd:pr-4 odd:pl-0 border-b border-gray-200 odd:border-r" v-for="(item, index) in detailSet" :key="index">
                     <div class="pb-2 text-sm">
                         {{ item.category }} 
                     </div>
