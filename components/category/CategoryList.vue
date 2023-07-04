@@ -61,6 +61,11 @@
         }    
         this.$nextTick(function() { 
             this.detailSet = data[this.paramData]
+            
+            for(let i = 0; i < this.$refs.categorylisttop.length; i++){
+                this.$refs.categorylisttop[i].innerText === this.$route.params.id ? this.$refs.categorylisttop[i].classList.add('font-bold') : this.$refs.categorylisttop[i].classList.remove('font-bold')
+                
+            }
         })        
     },
     methods:{
