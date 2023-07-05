@@ -125,8 +125,8 @@
               <span class="flex w-full"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
                   >{{ index + 1 }}</em
                 >
-                <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</nuxt-link></span
-              >
+                <span class="text-sm truncate tracking-tighter hover:cursor-pointer" @click="viewRelative(item)">{{ item.title }}</span>
+              </span>                
             </span>
           </li>
         </ul>   
@@ -166,9 +166,7 @@ export default {
   mounted() {
     if (this.$route.params.id) {
       this.cont = this.$route.params.id
-    }  
-
-    //console.log(data[this.cont.type])
+    }
 
     if(data[this.cont.type]){
       for(let i = 0; i < data[this.cont.type].length; i++){
@@ -193,6 +191,18 @@ export default {
         alert('내용을 입력해주세요')
         this.$refs.comment.focus()
       } 
+    },
+    viewRelative(e){
+      this.cont = e      
+      
+      if(data[this.cont.type]){
+        for(let i = 0; i < data[this.cont.type].length; i++){
+          if(this.cont.category === data[this.cont.type][i].category && this.cont.id !== data[this.cont.type][i].id){
+            this.newarr = []
+            this.newarr.push(data[this.cont.type][i])
+          }
+        }
+      }
     }
   },
   watch:{
