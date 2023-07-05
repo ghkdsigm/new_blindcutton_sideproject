@@ -54,12 +54,12 @@
                 v-for="(item, index) in this.famous"
                 :key="index"
               >
-                <span class="w-full text-sm flex justify-between">
+                <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="w-full text-sm flex justify-between">
                   <span class="flex w-11/12"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
                       >{{ index + 1 }}</em
                     >
-                    <a href="" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</a></span
-                  >
+                    <a href="" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</a>
+                  </span>
                   <span class="w-3 text-center text-xs" v-if="item.before === 'up'"
                     ><em class="w-full not-italic text-red-600">▲</em></span
                   >
@@ -73,7 +73,7 @@
                   <span class="w-3 text-center text-xs" v-else
                     ><em class="w-full not-italic text-blue-600">▼</em></span
                   >
-                </span>
+                </nuxt-link>
               </li>
             </ul>
             <p class="text-xs w-full text-center mt-4 tracking-tighter text-gray-400">

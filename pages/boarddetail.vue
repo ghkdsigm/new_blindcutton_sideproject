@@ -184,8 +184,10 @@ export default {
     focusText(newValue, oldValue){
       if(newValue.target.value !== ""){
         this.emptyValue = false
+        this.$refs.comment.setAttribute('rows', 5)
       } else {
         this.emptyValue = true
+        this.$refs.comment.setAttribute('rows', 1)
       }      
     },
     commentbt(){
