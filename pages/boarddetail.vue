@@ -179,8 +179,18 @@
           >'{{ cont.category }}'관련 추천글</strong
         >
         <!-- 관련 추천글 -->
-        <ul class="">
+        <ul>
+          <li v-if="this.newarr.length === 0">
+            <span class="w-full text-sm flex justify-between">
+              <span class="flex w-full">
+                <span class="text-sm truncate tracking-tighter"
+                  >관련글이 존재하지 않습니다.</span
+                >
+              </span>
+            </span>
+          </li>
           <li
+            v-else
             class="pb-2 tracking-tighter"
             v-for="(item, index) in this.newarr"
             :key="index"
