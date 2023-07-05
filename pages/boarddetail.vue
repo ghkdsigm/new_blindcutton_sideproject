@@ -110,40 +110,27 @@
         </a>
       </div>
       <!-- //View 광고존 -->
-    </div>
+    </div>    
     <div class="w-2/7">
       <div class="mb-8 border border-slate-200 p-6">
         <strong class="flex w-full text-sm font-bold mb-4">'{{ cont.category }}'관련 추천글</strong>
-        <!-- 
+        <!-- 관련 추천글 -->
         <ul class="">
           <li
             class="pb-2 tracking-tighter"
-            v-for="(item, index) in this.famous"
+            v-for="(item, index) in this.newarr"
             :key="index"
           >
             <span class="w-full text-sm flex justify-between">
-              <span class="flex w-11/12"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
+              <span class="flex w-full"><em class="not-italic font-bold text-gray-400 mr-2 w-4 inline-block text-center text-sm"
                   >{{ index + 1 }}</em
                 >
-                <a href="" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</a></span
-              >
-              <span class="w-3 text-center text-xs" v-if="item.before === 'up'"
-                ><em class="w-full not-italic text-red-600">▲</em></span
-              >
-              <span class="w-3 text-center text-xs"
-                v-else-if="item.before === 'same'"
-                ><em
-                  class="w-full not-italic text-black text-xl leading-superzero"
-                  >-</em
-                ></span
-              >
-              <span class="w-3 text-center text-xs" v-else
-                ><em class="w-full not-italic text-blue-600">▼</em></span
+                <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="text-sm truncate tracking-tighter" :title="item.title">{{ item.title }}</nuxt-link></span
               >
             </span>
           </li>
-        </ul>
-        -->        
+        </ul>   
+        <!-- //관련 추천글 -->
       </div>
       <a href="" class="my-8 block">
         <img
@@ -173,12 +160,23 @@ export default {
       cbt: "",
       emptyValue : true,
       recommend: '',
+      newarr: []
     }
   },
   mounted() {
     if (this.$route.params.id) {
       this.cont = this.$route.params.id
     }  
+
+    //console.log(data[this.cont.type])
+
+    if(data[this.cont.type]){
+      for(let i = 0; i < data[this.cont.type].length; i++){
+        if(this.cont.category === data[this.cont.type][i].category && this.cont.id !== data[this.cont.type][i].id){
+        this.newarr.push(data[this.cont.type][i])
+        }
+      }
+    }
   },
   methods:{
     focusText(newValue, oldValue){
