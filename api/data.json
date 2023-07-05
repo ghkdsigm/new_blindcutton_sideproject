@@ -20,6 +20,22 @@
     },
     {
       "type" : "board",
+      "category": "loves",
+      "addedfile": "Y",
+      "title": "아이돌 12세대는?",
+      "content": "임재범, 박효신, 나얼 이지",
+      "views": 251132,
+      "likes": 341,
+      "dislikes": 12144,
+      "hashtag": ["sg워너비", "먼데이키즈", "이루"],
+      "writer": "user",
+      "id": 41,
+      "date": "2023.11.11",
+      "recommentcount": 11552,
+      "imgurl" : "https://img.sbs.co.kr/newimg/news/20230403/201768737_500.jpg"
+    },
+    {
+      "type" : "board",
       "category": "부동산",
       "addedfile": "N",
       "title": "서울 집값 vs 홍콩 집값 vs 싱가폴 집값 결과는??",

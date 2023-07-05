@@ -9,13 +9,13 @@
         <nuxt-link :to="{name:'boarddetail', params:{id: item}}" class="flex items-center w-11/12">        
           <span class="flex items-center border border-slate-300 px-2 text-xs mr-2 text-slate-500">{{ item.category }}</span> 
           <a href="" class="text-sm items-center max-w-[90%] truncate inline-block" :title="item.title">
-            <img v-if="item.imgurl" src="https://www.pngkey.com/png/full/291-2912837_album-comments-album-icon-png.png" alt="" class="relative bottom-0.5 inline-block w-4">
+            <img v-if="item.imgurl" src="https://www.pngkey.com/png/full/291-2912837_album-comments-album-icon-png.png" :alt="item.title" class="relative bottom-0.5 inline-block w-4">
             {{ item.title }}
           </a>
         </nuxt-link>
         <span class="w-1/12 flex justify-between text-left">
-          <span class="w-1/2 text-xs text-gray-500 font-light"><i class="blind"></i>{{ item.views }}</span>
-          <span class="w-1/2 text-xs text-gray-500 font-light"><i class="blind"></i>{{ item.likes }}</span>           
+          <span class="w-1/2 text-xs text-gray-500 font-light truncate" :title="item.views"><i class="blind"></i>{{ item.views.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }}</span>
+          <span class="w-1/2 text-xs text-gray-500 font-light truncate" :title="item.likes"><i class="blind"></i>{{ item.likes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }}</span>           
         </span>
       </li>
     </ul>
