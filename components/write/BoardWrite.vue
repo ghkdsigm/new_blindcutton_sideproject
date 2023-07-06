@@ -67,11 +67,11 @@
               </div>
               <div class="select w-1/2 pl-1" v-if="this.category.length !== 0">
                 <select                  
-                  ref="setCategory"
                   v-model="selected2"
                   class="w-full cursor-pointer text-lg font-medium focus:outline-none mb-4 pb-4 resize-none border border-grayy-400"
                   >
                   <option
+                    ref="setCategory"  
                     v-for="option in setCategory"
                     :value="option"
                     :key="option"
@@ -125,7 +125,7 @@ export default {
       tTitle: "",
       tBody: "",
       selected: "basic",
-      selected2: "카테고리를 입력해주세요.",
+      selected2: "카테고리를 입력하세요",
       options: [
         { text: "테마를 선택하세요", value: "basic" },
         { text: "연예", value: "loves" },
@@ -199,6 +199,10 @@ export default {
       })
       let res = data[e].reduce((ac, v) => ac.includes(v.category) ? ac : [...ac, v.category], [])
       this.setCategory = res
+
+      if(this.setCategory.length >= 1){
+        this.setCategory.unshift('카테고리를 입력하세요')
+      }
     }    
   }
 };
