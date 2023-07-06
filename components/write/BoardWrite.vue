@@ -26,7 +26,7 @@
           <div class="lg:text-right mr-2">
             <button
               v-if="
-                this.tBody !== '' && this.tTitle !== '' && this.selected !== '0'
+                this.tBody !== '' && this.tTitle !== '' && this.selected !== '' && this.category.length !== 0 && this.setCategory.length !== 0
               "
               @click="onAddcont"
               class="bg-primary text-blue-600 text-base font-medium py-1 rounded-full"
@@ -67,13 +67,13 @@
               </div>
               <div class="select w-1/2 pl-1" v-if="this.category.length !== 0">
                 <select                  
-                  ref="category"
+                  ref="setCategory"
                   v-model="selected2"
                   class="w-full cursor-pointer text-lg font-medium focus:outline-none mb-4 pb-4 resize-none border border-grayy-400"
                   >
                   <option
                     v-for="option in setCategory"
-                    value="카테고리를 선택하세요"
+                    :value="option"
                     :key="option"
                     class="px-0"
                   >
@@ -125,7 +125,7 @@ export default {
       tTitle: "",
       tBody: "",
       selected: "basic",
-      selected2: '카테고리를 선택하세요',
+      selected2: "카테고리를 입력해주세요.",
       options: [
         { text: "테마를 선택하세요", value: "basic" },
         { text: "연예", value: "loves" },
@@ -134,24 +134,42 @@ export default {
         { text: "자동차", value: "cars" }
       ],
       category: [],
-      setCategory : []
+      setCategory : [],
+      register: {
+        title: '',
+        content: '',
+        thema: '',
+        category: '',
+        images: []
+      }
     };
   },
   methods: {
     onAddcont() {
       alert("ok");
+      
+      if(this.tBody !== '' && this.tTitle !== '' && this.selected !== 'basic' && this.category.length !== 0 && this.setCategory.length !== 0){
+        this.register.title = this.tTitle
+        this.register.content = this.tBody
+        this.register.thema = this.selected
+        this.register.category = this.selected2
+        this.register.images = '이미지url'
+      }
       this.$emit("close-modal");
     },
     nonAddcont() {
-      if (this.tTitle === "") {
+      if (this.tTitle === "") { 
         alert("제목을 입력하세요!");
         this.$refs.tTitlezone.focus();
       } else if (this.tBody === "") {
         alert("내용을 입력하세요!");
         this.$refs.tBodyzone.focus();
-      } else if (this.selected === "0") {
+      } else if (!this.category.length) {
         alert("테마를 선택하세요!");
         this.$refs.category.focus();
+      } else if (!this.setCategory.length) {
+        alert("카테고리를 선택하세요!");
+        this.$refs.setCategory.focus();
       }
     },
     sendClose() {
