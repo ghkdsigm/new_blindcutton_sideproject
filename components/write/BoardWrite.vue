@@ -172,7 +172,7 @@ export default {
     selected(e){
       //this.selected2 = ""     
       this.category = []   
-      data[e].filter((v, i) => {        
+      data[e].map((v, i) => {        
         this.category.push(
           {
             text: v.category
@@ -210,7 +210,7 @@ select::-ms-expand{
 
 .select__arrow{
   position: absolute;
-  top :16px;
+  top :22px;
   right: 15px;
   width :0;
   height :0;
