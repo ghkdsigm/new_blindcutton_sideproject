@@ -47,21 +47,41 @@
         <div class="flex p-4 flex-col flex-1 h-full">
           <div class="mx-3 h-full flex flex-col">
             <!-- 카테고리 -->
-            <div>
-              <select
-                ref="category"
-                v-model="selected"
-                class="w-full cursor-pointer text-lg font-medium focus:outline-none mb-4 pb-4 resize-none"
-              >
-                <option
-                  v-for="option in options"
-                  :value="option.value"
-                  :key="option.value"
-                  class="px-0"
+            <div class="flex">
+              <div class="select w-1/2 pr-1">
+                <select
+                  ref="category"
+                  v-model="selected"
+                  class="w-full cursor-pointer text-lg font-medium focus:outline-none mb-4 pb-4 resize-none border border-grayy-400"
                 >
-                  {{ option.text }}
-                </option>
-              </select>
+                  <option
+                    v-for="option in options"
+                    :value="option.value"
+                    :key="option.value"
+                    class="px-0"
+                  >
+                    {{ option.text }}
+                  </option>
+                </select>
+                <div class="select__arrow"></div>
+              </div>
+              <div class="select w-1/2 pl-1" v-if="this.category.length !== 0">
+                <select                  
+                  ref="category"
+                  v-model="selected2"
+                  class="w-full cursor-pointer text-lg font-medium focus:outline-none mb-4 pb-4 resize-none border border-grayy-400"
+                  >
+                  <option
+                    v-for="option in setCategory"
+                    value="카테고리를 선택하세요"
+                    :key="option"
+                    class="px-0"
+                  >
+                    {{ option }}
+                  </option>
+                </select>
+                <div class="select__arrow"></div>
+              </div>
             </div>
             <!-- 제목 -->
             <input
@@ -97,20 +117,24 @@
 </template>
 
 <script>
+import data from '~/api/data.json'
+
 export default {
   data() {
     return {
       tTitle: "",
       tBody: "",
-      selected: "0",
+      selected: "basic",
+      selected2: '카테고리를 선택하세요',
       options: [
-        { text: "카테고리를 선택하세요", value: "0" },
-        { text: "부동산", value: "1" },
-        { text: "육아", value: "2" },
-        { text: "자동차", value: "3" },
-        { text: "연예", value: "4" },
-        { text: "재테크", value: "5" },
+        { text: "테마를 선택하세요", value: "basic" },
+        { text: "연예", value: "loves" },
+        { text: "게임", value: "games" },
+        { text: "스포츠", value: "sports" },
+        { text: "자동차", value: "cars" }
       ],
+      category: [],
+      setCategory : []
     };
   },
   methods: {
@@ -126,7 +150,7 @@ export default {
         alert("내용을 입력하세요!");
         this.$refs.tBodyzone.focus();
       } else if (this.selected === "0") {
-        alert("카테고리를 선택하세요!");
+        alert("테마를 선택하세요!");
         this.$refs.category.focus();
       }
     },
@@ -144,7 +168,56 @@ export default {
       }
     },
   },
+  watch:{
+    selected(e){
+      //this.selected2 = ""     
+      this.category = []   
+      data[e].filter((v, i) => {        
+        this.category.push(
+          {
+            text: v.category
+          }
+        )          
+      })
+      let res = data[e].reduce((ac, v) => ac.includes(v.category) ? ac : [...ac, v.category], [])
+      this.setCategory = res
+    }    
+  }
 };
 </script>
 
-<style></style>
+<style scoped>
+.select{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width :100%;
+
+}
+
+select{
+  display:inline-block;
+  width:100%;
+  padding:10px 15px;
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+}
+
+select::-ms-expand{
+  display:none;
+}
+
+.select__arrow{
+  position: absolute;
+  top :16px;
+  right: 15px;
+  width :0;
+  height :0;
+  pointer-events: none;
+  border-style :solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #999 transparent transparent transparent;
+}
+
+</style>
