@@ -26,7 +26,7 @@
           <div class="lg:text-right mr-2">
             <button
               v-if="
-                this.tBody !== '' && this.tTitle !== '' && this.selected !== '' && this.category.length !== 0 && this.setCategory.length !== 0
+                this.tBody !== '' && this.tTitle !== '' && this.selected !== '' && this.category.length !== 0 && this.setCategory.length !== 0 && this.selected2 !== '카테고리를 입력하세요'
               "
               @click="onAddcont"
               class="bg-primary text-blue-600 text-base font-medium py-1 rounded-full"
