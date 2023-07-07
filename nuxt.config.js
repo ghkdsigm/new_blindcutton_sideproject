@@ -19,6 +19,7 @@ module.exports = {
   css: [
     '@/assets/css/main.css',
   ],
+  plugins: [{ src: '~/plugins/persistedState.client.js' }],
   /*
   ** Customize the progress bar color
   */

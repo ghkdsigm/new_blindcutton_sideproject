@@ -14,7 +14,7 @@
                                 </div>
                                 <p class=" text-xs text-zinc-400 pt-2 tracking-tighter">사업자 사업번호 : dja2d11190013</p>
                             </div>
-                            <p class="text-sm text-zinc-400 dark:text-zinc-500 tracking-tighter">© 2023 Spencer Sharp. All rights reserved.</p>
+                            <p class="text-sm text-zinc-400 dark:text-zinc-500 tracking-tighter">© 2023 SeungHyun. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

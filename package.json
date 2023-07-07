@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.10",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

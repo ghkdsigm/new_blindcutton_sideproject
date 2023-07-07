@@ -1,17 +1,9 @@
-// // store/index.js
-// export const state = () => ({
-//     user: {}
-// })
+export const state = () => ({
+    counter: 0
+  })
   
-// export const mutations = {
-//     setUser(state, user) {
-//         state.user = user;
-//     }
-// }
-
-// export const actions = {
-//     async fetchUser(context) {
-//         const response = await axios.get('users/1');
-//         context.commit('setUser', response.data);
-//     }
-// }
+  export const mutations = {
+    increment(state) {
+      state.counter++
+    }
+  }

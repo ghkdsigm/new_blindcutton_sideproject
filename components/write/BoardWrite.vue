@@ -26,7 +26,7 @@
           <div class="lg:text-right mr-2">
             <button
               v-if="
-                this.tBody !== '' && this.tTitle !== '' && this.selected !== '' && this.category.length !== 0 && this.setCategory.length !== 0 && this.selected2 !== '카테고리를 입력하세요'
+                this.tBody !== '' && this.tTitle !== '' && this.selected !== '' && this.category.length !== 0 && this.setCategory.length !== 0 && this.selected2 !== '카테고리 선택'
               "
               @click="onAddcont"
               class="bg-primary text-blue-600 text-base font-medium py-1 rounded-full"
@@ -109,7 +109,13 @@
         </div>
         <!-- 하단 -->
         <div clas="w-full bg-black h-2">
-          <img class="w-12 h-12 rounded-full hover:opacity-80 cursor-pointer" />
+          <!-- <img class="w-12 h-12 rounded-full hover:opacity-80 cursor-pointer" /> -->
+          <input type="file" accept="image/*" @change="fileChange" multiple />          
+          <ul>
+            <li clsas="flex" v-for="(item, index) in file" :key="index">
+              {{ item.name }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -125,7 +131,7 @@ export default {
       tTitle: "",
       tBody: "",
       selected: "basic",
-      selected2: "카테고리를 입력하세요",
+      selected2: "카테고리 선택",
       options: [
         { text: "테마를 선택하세요", value: "basic" },
         { text: "연예", value: "loves" },
@@ -140,8 +146,10 @@ export default {
         content: '',
         thema: '',
         category: '',
-        images: []
-      }
+        images: [],
+        id: 0
+      },
+      file: [],
     };
   },
   methods: {
@@ -153,8 +161,22 @@ export default {
         this.register.content = this.tBody
         this.register.thema = this.selected
         this.register.category = this.selected2
-        this.register.images = '이미지url'
+        this.register.images = '이미지url',
+        this.register.id = Math.floor(new Date().getTime() + Math.random())
       }
+
+      if(this.tBody !== '' && this.tTitle !== '' && this.selected !== 'basic' && this.category.length !== 0 && this.setCategory.length !== 0){
+        if(this.selected === 'loves'){
+          this.$store.commit('content/addLoves', this.register)       
+        } else if(this.selected === 'sports') {
+          this.$store.commit('content/addSports', this.register)     
+        } else if(this.selected === 'games') {
+          this.$store.commit('content/addGames', this.register)     
+        } else if(this.selected === 'cars') {
+          this.$store.commit('content/addCars', this.register)     
+        }
+      }
+
       this.$emit("close-modal");
     },
     nonAddcont() {
@@ -168,7 +190,7 @@ export default {
         alert("테마를 선택하세요!");
         this.$refs.category.focus();
       } else if (!this.setCategory.length) {
-        alert("카테고리를 선택하세요!");
+        alert("카테고리 선택");
         this.$refs.setCategory.focus();
       }
     },
@@ -185,6 +207,38 @@ export default {
         }
       }
     },
+    fileChange(e) {
+      const file = e.target.files;
+      let validation = true;
+      let message = '';
+
+      if (file.length > 10) {
+          validation= false;
+          message = `파일은 한개만 등록 가능합니다.`
+      }
+
+      if (file[0].size > 1024 * 1024 * 2) {
+          message = `${message}, 파일은 용량은 2MB 이하만 가능합니다.`;
+          validation = false;
+      }
+
+      if (file[0].type.indexOf('image') < 0) {
+          message = `${message}, 이미지 파일만 업로드 가능합니다.`;
+          validation = false;
+      }
+
+      this.$nextTick(()=>{
+        if (validation) {
+            for(let i = 0; i < file.length; i++){
+              this.file.push(file[i])
+            }
+        }
+        else {
+            this.file = '';
+            alert(message);
+        }
+      })      
+    }
   },
   watch:{
     selected(e){
@@ -201,7 +255,7 @@ export default {
       this.setCategory = res
 
       if(this.setCategory.length >= 1){
-        this.setCategory.unshift('카테고리를 입력하세요')
+        this.setCategory.unshift('카테고리 선택')
       }
     }    
   }
